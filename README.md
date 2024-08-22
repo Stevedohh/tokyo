@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React Website Template
  A React and Next.js CMS Website Template is a pre-designed, customizable solution crafted using two powerful JavaScript frameworks: React.js and Next.js. This template is ideal for developers and businesses looking to build dynamic, high-performance content management system (CMS) websites with ease and efficiency.
 
@@ -107,3 +108,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+=======
+# Web
+>>>>>>> 20d6ae36a98af5ba3879a238c98e319ba6d3db67
