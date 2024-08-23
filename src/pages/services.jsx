@@ -1,16 +1,28 @@
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from 'react'
 import Banner from './components/Banner'
 import Service from './components/Service'
-import Home_Owl from './components/Home_Owl'
+import Testimonials from './components/Testimonials'
 
 export default function services() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = useTranslation('common');
+
   return (
    <>
-    <Banner page="Service" header="Our Services"/>
+    <Banner page={t('service')} header={ t('our_services') }/>
     <Service/>
-    <Home_Owl/>
+    <Testimonials/>
    </>
   )
 }
 
- 
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'ru', [
+      'common', 'navbar', 'footer', 'service', 'testimonials'
+    ])),
+  },
+})
+
