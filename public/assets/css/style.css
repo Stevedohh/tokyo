@@ -1006,6 +1006,12 @@
     }
 }
 
+.newsletter-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
 .newsletter-input input {
     flex-grow: 1;
     border-radius: 25px;
